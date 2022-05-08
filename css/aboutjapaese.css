@@ -142,11 +142,19 @@ header.sticky ul li a{
 }
 .ubcw{
     float: left;
+    
 }
 .tokai , .ubc{
     width: 150px;
     float: left;
 }
+.tokai{
+    margin-left: 110px;
+}
+.ubc{
+    margin-left: 40px;
+}
+
 
 .work1{
     margin: 50px auto;
@@ -157,6 +165,8 @@ header.sticky ul li a{
     -webkit-align-items: center;
     align-items: center;
 }
+
+
 .ft{
     width: 150px;
 }

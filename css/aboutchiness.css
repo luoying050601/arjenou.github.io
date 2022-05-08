@@ -142,10 +142,17 @@ header.sticky ul li a{
 }
 .ubcw{
     float: left;
+    
 }
 .tokai , .ubc{
     width: 150px;
     float: left;
+}
+.tokai{
+    margin-left: 130px;
+}
+.ubc{
+    margin-left: 50px;
 }
 
 .work1{
