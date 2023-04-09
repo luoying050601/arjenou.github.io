@@ -135,6 +135,9 @@ header.sticky ul li a{
     -webkit-align-items: center;
     align-items: center;
 }
+.utokyo{
+    width: 280px;
+}
 
 .tokaiw{
     float: left;
@@ -149,7 +152,7 @@ header.sticky ul li a{
     float: left;
 }
 .tokai{
-    margin-left: 110px;
+    margin-left: 20px;
 }
 .ubc{
     margin-left: 40px;

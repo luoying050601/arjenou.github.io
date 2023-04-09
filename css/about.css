@@ -136,16 +136,27 @@ header.sticky ul li a{
     align-items: center;
 }
 
+.utokyo{
+    width: 280px;
+}
+
 .tokaiw{
     float: left;
     margin-right: 50px;
 }
 .ubcw{
     float: left;
+    
 }
 .tokai , .ubc{
     width: 150px;
     float: left;
+}
+.tokai{
+    margin-left: 20px;
+}
+.ubc{
+    margin-left: 40px;
 }
 
 .work1{
