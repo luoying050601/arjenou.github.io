@@ -7,6 +7,15 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="css/index.css" rel="stylesheet">
     <title>Home</title>
+        <script src="js/language.js">
+    </script> <!-- Load the language.js script -->
+    <script>
+        window.onload = function () {
+            loadLanguage('en');
+        };
+
+
+    </script>
 </head>
 
 <body>
@@ -34,10 +43,15 @@
                 Sakura
                 <h2>SINCE 2019 | China -> Japan</h2>
             </span>
+<!--            <div class="dropdown-content">
+                    <a href="#" onclick="loadLanguage('en')">English</a>
+                    <a href="#" onclick="loadLanguage('zh')">中文</a>
+                    <a href="#" onclick="loadLanguage('jp')">日本語</a>
+                </div>-->
             <div class="btn-a">
-                <a class="btn english" href="html/Ying.English.html">English</a>
-                <a class="btn chinese" href="html/Ying.Chinese.html">中文</a>
-                <a class="btn japanese" href="html/Ying.Japanese.html">日本語</a>
+                <a class="btn english"  href="html/Ying.English.html?lang=en">English</a>
+                <a class="btn chinese" href="html/Ying.English.html?lang=zh">中文</a>
+                <a class="btn japanese" href="html/Ying.English.html?lang=jp">日本語</a>
             </div>
         </div>
     </div>

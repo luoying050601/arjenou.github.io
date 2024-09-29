@@ -12,7 +12,26 @@
     <script src="../js/language.js">
     </script> <!-- Load the language.js script -->
     <script>
+
+         // 获取 URL 参数函数
+    function getQueryParameter(param) {
+        let urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // // 根据 lang 参数加载不同的语言
+    // window.onload = function () {
+    //
+    // };
         window.onload = function () {
+        let lang = getQueryParameter('lang'); // 获取 lang 参数
+
+        if (lang) {
+            // loadLanguage('en');
+            loadLanguage(lang); // 调用已有的 loadLanguage 函数加载对应语言
+        } else {
+            loadLanguage('en'); // 默认加载英文
+        }
 
             let currentSlideIndex = 0;
             // const slides = document.querySelectorAll('.carousel-item');
@@ -74,7 +93,7 @@
             // 暴露全局函数以便点击圆点时调用
             window.currentSlide = currentSlide;
 
-            loadLanguage('en');
+
         };
 
 
