@@ -11,7 +11,7 @@
   "about": {
     "title": "私について",
     "content1": "こんにちは！私の名前は<strong>羅 桜</strong>です。私は御茶ノ水女子大学で博士課程後期3年生に在籍しており、神経科学と機械学習の交差点を探る研究に取り組んでいます。特に、さまざまな刺激の下での脳活動の分析に焦点を当てています。",
-    "content2": "自由な時間には、旅行や異文化の体験を楽しんでいます。AIの可能性が人間の知識を進め、日常生活を向上させることに大いに興味を持っています。どうぞ私の出版物を閲覧して、私の研究についてもっと知ってください。",
+    "content2": "自由な時間には、旅行や異文化の体験を楽しんでいます。AIの可能性が人間の知識を進め、日常生活を向上させることに大いに興味を持っています。私の専門分野にご関心をお寄せいただきありがとうございます。私の出版物をご覧いただき、私の研究についてさらに詳しくご存じになりたい場合や、さらなる共同研究の機会を見つけたい場合は、遠慮なくご連絡ください。",
     "email": "メール：<strong>ying.luo [at] is.ocha.ac.jp</strong> または <strong>luoying050601[at]gmail.com</strong>",
     "address": "住所：<strong>東京都文京区大塚2-1-1、112-8610</strong>",
     "education": {
@@ -19,18 +19,18 @@
       "degrees": [
         {
           "year": "2022-2025",
-          "degree": "博士 人間文化創成科学研究科, お茶の水女子大学",
+          "degree": "<strong>博士</strong> 人間文化創成科学研究科, お茶の水女子大学",
           "details": "卒業予定日: 2025年2月",
           "thesis": "博士論文: “音楽刺激に対する性差と個人差に基づく脳の情報処理メカニズムの解明”"
         },
         {
           "year": "2020-2022",
-          "degree": "修士 人間文化創成科学研究科, お茶の水女子大学",
+          "degree": "<strong>修士</strong> 人間文化創成科学研究科, お茶の水女子大学",
           "thesis": "修士論文: “BrainBERT: 認知処理の神経相関をテキストデータにマッピングする言語モデルの開発”"
         },
         {
           "year": "2012-2016",
-          "degree": "学士 ソフトウェア工学, 数学とコンピュータ科学学院, 福州大学, 中国"
+          "degree": "<strong>学士</strong> ソフトウェア工学, 数学とコンピュータ科学学院, 福州大学, 中国"
         }
       ]
     }
@@ -59,7 +59,7 @@
         "[2021] <strong>羅 桜</strong>、<strong>小林 一郎</strong>。<strong>BrainBERT：脳活動とテキストの対応関係を基にした言語モデル構築アプローチ</strong>。FSS2021。（オンライン）"
       ],
       "invited": [
-        "[2024] <strong>基調講演</strong>、福州大学コンピュータ科学・ビッグデータ学部。",
+        "[2024] <strong>基調講演</strong>、福州大学　コンピュータ科学・ビッグデータ学部。",
         "[2023] <strong>基調講演</strong>、国立産業技術総合研究所（AIST）。"
       ]
     }
@@ -71,34 +71,34 @@
         "logo": "../logo/JSPS-logo.png",
         "alt": "JSPS ロゴ",
         "title": "JSPS 研究奨励金（DC2）",
-        "description": "日本学術振興会（JSPS）、御茶ノ水女子大学、2023年4月 - 2025年3月。"
+        "description": "日本学術振興会（JSPS）、御茶ノ水女子大学、2023年4月 - 2025年3月"
       },
       {
         "logo": "../logo/JSPS-logo.png",
         "alt": "JSPS ロゴ",
         "title": "特別研究補助金（月額30,000円）",
-        "description": "日本学術振興会（JSPS）、2024年。"
+        "description": "日本学術振興会（JSPS）、2024年"
       },
       {
         "logo": "../logo/ieee-logo.png",
         "alt": "IEEE ロゴ",
         "title": "IEEE Brain Best（学生）論文賞",
-        "description": "2023年IEEEシステムズ・マン・サイバネティクス会議にノミネート（脳カテゴリーで7名）。",
+        "description": "IEEEシステムズ・マン・サイバネティクス会議にノミネート（脳カテゴリーで7名）、2023年",
         "link": "https://ieeesmc2023.org/grants/best-student-paper-award/"
       },
       {
         "logo": "../logo/ieee-logo.png",
         "alt": "IEEE ロゴ",
         "title": "学生旅行奨励金：500ドル",
-        "description": "2023年IEEEシステムズ・マン・サイバネティクス会議による授与。",
+        "description": "IEEEシステムズ・マン・サイバネティクス会議による授与、2023年",
         "link": "https://ieeesmc2023.org/grants/student-grants/"
       },
 
       {
         "logo": "../logo/JSPS-logo.png",
         "alt": "JSPS ロゴ",
-        "title": "研究助成金（JSPS研究奨励金）",
-        "description": "日本学術振興会より年間900,000円を授与。",
+        "title": "JSPS研究奨励金",
+        "description": "日本学術振興会より年間900,000円を授与",
         "link": "https://research-er.jp/projects/view/1226696"
       },
       {
@@ -111,52 +111,52 @@
         "logo": "../logo/ochanomizu-logo.png",
         "alt": "御茶ノ水女子大学ロゴ",
         "title": "Migakazuba支援奨学金（180,000円）",
-        "description": "御茶ノ水女子大学、2021年8月 - 2022年1月。"
+        "description": "御茶ノ水女子大学、2021年8月 - 2022年1月"
       },
       {
         "logo": "../logo/avanade-logo.png",
         "alt": "Avanade ロゴ",
         "title": "Avanade研究奨励賞",
-        "description": "2021年9月、Avanade社から10名の大学院生に授与。"
+        "description": "Avanade社から10名の大学院生に授与、2021年9月"
       },
       {
         "logo": "../logo/ai-symposium-logo.png",
         "alt": "AIシンポジウムロゴ",
         "title": "最優秀発表賞",
-        "description": "第22回先進インテリジェントシステム国際シンポジウムで授与、2021年12月。"
+        "description": "第22回先進インテリジェントシステム国際シンポジウムで授与、2021年12月"
       },
       {
         "logo": "../logo/ochanomizu-logo.png",
         "alt": "御茶ノ水女子大学ロゴ",
         "title": "Migakazuba支援奨学金（270,000円）",
-        "description": "御茶ノ水女子大学、2020年7月 - 2021年3月。"
+        "description": "御茶ノ水女子大学、2020年7月 - 2021年3月"
       },
       {
         "logo": "../logo/definesys-logo.png",
         "alt": "DefineSys ロゴ",
         "title": "最優秀社員賞",
-        "description": "上海DefineSys情報技術有限公司、2019年1月。"
+        "description": "上海DefineSys情報技術有限公司、2019年1月"
       },
       {
         "logo": "../logo/fuzhou-university-logo.png",
         "alt": "福州大学ロゴ",
         "title": "優秀論文賞および優秀卒業生賞",
-        "description": "福州大学、中国、2016年6月。"
+        "description": "福州大学、中国、2016年6月"
       },
       {
         "logo": "../logo/fuzhou-university-logo.png",
         "alt": "福州大学ロゴ",
         "title": "内部および私立奨学金",
-        "description": "福州大学、中国、2012年9月 - 2016年6月。"
+        "description": "福州大学、中国、2012年9月 - 2016年6月"
       }
     ]
   },
   "career": {
     "title": "職務経験またはインターンシップ",
     "list": [
-      "<strong>2021</strong>：<br> 『情報処理演習』授業のティーチングアシスタント、御茶ノ水女子大学人文学・科学研究科。",
-      "<strong>2020-2023</strong>：<br> 御茶ノ水女子大学人文学・科学研究科小林研究室の研究アシスタント。",
-      "<strong>2016-2019</strong>：<br> 上海DefineSys情報技術有限公司プロジェクトマネージャー。<br>- 20人のチームを管理し、システム統合およびソフトウェア開発に焦点を当てた複数のITプロジェクトを担当。"
+      "<strong>2021</strong>：<br> <strong>ティーチングアシスタント：</strong>『情報処理演習』授業、御茶ノ水女子大学　人間文化創成科学研究科",
+      "<strong>2020-2023</strong>：<br> <strong>研究アシスタント：</strong>御茶ノ水女子大学 人間文化創成科学研究科　小林研究室",
+      "<strong>2016-2019</strong>：<br> <strong>プロジェクトマネージャー：</strong>上海DefineSys情報技術有限公司<br>- 20人のチームを管理し、システム統合およびソフトウェア開発に焦点を当てた複数のITプロジェクトを担当。"
     ]
   },
   "links": {

@@ -10,8 +10,8 @@
   },
   "about": {
     "title": "About Me",
-    "content1": "Hello! My name is <strong>Ying Luo</strong>. I am a Ph.D. candidate in Advanced Sciences at Ochanomizu University. My research focuses on exploring the intersection of neuroscience and machine learning, particularly in analyzing brain activities under various stimuli.",
-    "content2": "In my free time, I enjoy traveling and experiencing different cultures. I am passionate about the potential of AI to advance human knowledge and improve daily life. Feel free to browse my publications to learn more about my work.",
+    "content1": "Hello! My name is <strong>Ying Luo</strong>. I am a third-year Ph.D. candidate in Advanced Sciences at Ochanomizu University. My research focuses on exploring the intersection of neuroscience and machine learning, particularly in analyzing brain activities under various stimuli. My future research direction emphasizes the analysis of neurological diseases in the human brain and the modeling of hybrid models.",
+    "content2": "In my free time, I enjoy traveling and experiencing different cultures. I am passionate about the potential of AI to advance human knowledge and improve daily life. Thank you for your interest in my field of study. Please feel free to browse through my publications, and don’t hesitate to reach out if you’d like to learn more about my research or explore potential postdoctoral or collaborative opportunities.",
     "email": "Email: <strong>ying.luo [at] is.ocha.ac.jp</strong> or <strong>luoying050601[at]gmail.com</strong>",
     "address": "Address: <strong>2-1-1 Otsuka, Bunkyo-ku, Tokyo 112-8610</strong>",
     "education": {
@@ -19,18 +19,18 @@
       "degrees": [
         {
           "year": "2022-2025",
-          "degree": "Ph.D. in Advanced Sciences, Ochanomizu University",
+          "degree": "<strong>Ph.D.</strong> in Advanced Sciences, Ochanomizu University",
           "details": "Expected Graduation: Feb. 2025",
           "thesis": "Doctoral Dissertation: “Elucidating Brain Information Processing Mechanisms Based on Sex and Individual Differences in Response to Musical Stimuli”"
         },
         {
           "year": "2020-2022",
-          "degree": "M.Sc. in Advanced Sciences, Ochanomizu University",
+          "degree": "<strong>M.Sc.</strong> in Advanced Sciences, Ochanomizu University",
           "thesis": "Master’s Thesis: “BrainBERT: Developing a Language Model to Map Neural Correlates of Cognitive Processing to Textual Data”"
         },
         {
           "year": "2012-2016",
-          "degree": "Bachelor in Software Engineering, College of Mathematics and Computer Science, Fuzhou University, China"
+          "degree": "<strong>Bachelor</strong> in Software Engineering, College of Mathematics and Computer Science, Fuzhou University, China"
         }
       ]
     }
@@ -154,9 +154,9 @@
   "career": {
     "title": "Work Experience or Internship",
     "list": [
-      "<strong>2021</strong>:<br> Teaching Assistant in 'Information Processing Exercise', Graduate School of Humanities and Sciences, Ochanomizu University.",
-      "<strong>2020-2023</strong>:<br> Research Assistant in Kobayashi Laboratory, Graduate School of Humanities and Sciences, Ochanomizu University.",
-      "<strong>2016-2019</strong>: <br>Project Manager in Shanghai Definesys Information Technology Co., Ltd. <br>- Managed a team of 20 members on various IT projects, focusing on system integration and software development."
+      "<strong>2021</strong>:<br> <strong>Teaching Assistant:</strong> in 'Information Processing Exercise', Graduate School of Humanities and Sciences, Ochanomizu University.",
+      "<strong>2020-2023</strong>:<br> <strong>Research Assistant:</strong> in Kobayashi Laboratory, Graduate School of Humanities and Sciences, Ochanomizu University.",
+      "<strong>2016-2019</strong>: <br><strong>Project Manager:</strong> in Shanghai Definesys Information Technology Co., Ltd. <br>- Managed a team of 20 members on various IT projects, focusing on system integration and software development."
     ]
   },
   "links": {
