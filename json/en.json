@@ -68,12 +68,12 @@
     "title": "Awards",
          "awards": [
     {
-      "logo": "../logo/jsps-logo.png",
+      "logo": "../logo/JSPS-logo.png",
       "alt": "JSPS Logo",
       "title": "JSPS Research Fellowship (DC2)",
       "description": "Japan Society for the Promotion of Science (JSPS), Ochanomizu University, April 2023 – March 2025."
     }, {
-      "logo": "../logo/jsps-logo.png",
+      "logo": "../logo/JSPS-logo.png",
       "alt": "JSPS Logo",
       "title": "Special Research Grant Allowance (30,000 yen per month)",
       "description": "Japan Society for the Promotion of Science (JSPS), 2024."
@@ -94,7 +94,7 @@
     },
 
     {
-      "logo": "../logo/jsps-logo.png",
+      "logo": "../logo/JSPS-logo.png",
       "alt": "JSPS Logo",
       "title": "Research Grant (Grant-in-Aid for JSPS Fellows)",
       "description": "900,000 yen per year awarded by Japan Society for the Promotion of Science (JSPS)",

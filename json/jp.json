@@ -68,13 +68,13 @@
     "title": "受賞歴",
     "awards": [
       {
-        "logo": "../logo/jsps-logo.png",
+        "logo": "../logo/JSPS-logo.png",
         "alt": "JSPS ロゴ",
         "title": "JSPS 研究奨励金（DC2）",
         "description": "日本学術振興会（JSPS）、御茶ノ水女子大学、2023年4月 - 2025年3月。"
       },
       {
-        "logo": "../logo/jsps-logo.png",
+        "logo": "../logo/JSPS-logo.png",
         "alt": "JSPS ロゴ",
         "title": "特別研究補助金（月額30,000円）",
         "description": "日本学術振興会（JSPS）、2024年。"
@@ -95,7 +95,7 @@
       },
 
       {
-        "logo": "../logo/jsps-logo.png",
+        "logo": "../logo/JSPS-logo.png",
         "alt": "JSPS ロゴ",
         "title": "研究助成金（JSPS研究奨励金）",
         "description": "日本学術振興会より年間900,000円を授与。",

@@ -68,13 +68,13 @@
     "title": "奖项",
     "awards": [
       {
-        "logo": "../logo/jsps-logo.png",
+        "logo": "../logo/JSPS-logo.png",
         "alt": "JSPS logo",
         "title": "JSPS 研究员（DC2）",
         "description": "日本学术振兴会（JSPS），御茶水女子大学，2023年4月 - 2025年3月。"
       },
       {
-        "logo": "../logo/jsps-logo.png",
+        "logo": "../logo/JSPS-logo.png",
         "alt": "JSPS logo",
         "title": "特别研究补助金（每月30,000日元）",
         "description": "日本学术振兴会（JSPS），2024年。"
@@ -95,7 +95,7 @@
       },
 
       {
-        "logo": "../logo/jsps-logo.png",
+        "logo": "../logo/JSPS-logo.png",
         "alt": "JSPS logo",
         "title": "研究资助（JSPS研究员的科研资助金）",
         "description": "日本学术振兴会每年颁发900,000日元",
