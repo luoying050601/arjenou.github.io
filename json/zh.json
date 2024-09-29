@@ -1,0 +1,190 @@
+{
+  "header": {
+    "home": "罗 樱",
+    "news": "新闻",
+    "publications": "发表论文",
+    "awards": "获奖情况",
+    "career": "职业发展",
+    "links": "相关链接",
+    "contact": "联系方式"
+  },
+  "about": {
+    "title": "关于我",
+    "content1": "你好！我的名字是<strong>罗樱</strong>。我是御茶水女子大学高级科学专业的博士候选人。我的研究重点是探索神经科学与机器学习的交叉领域，特别是分析各种刺激下的大脑活动。",
+    "content2": "在空闲时间，我喜欢旅行并体验不同的文化。我对人工智能推动人类知识和改善日常生活的潜力充满热情。欢迎浏览我的出版物，了解更多关于我的工作。",
+    "email": "电子邮件：<strong>ying.luo [at] is.ocha.ac.jp</strong> 或 <strong>luoying050601[at]gmail.com</strong>",
+    "address": "地址：<strong>东京都文京区大冢2-1-1，112-8610</strong>",
+    "education": {
+      "title": "教育背景",
+      "degrees": [
+        {
+          "year": "2022-2025",
+          "degree": "博士 先进科学, 御茶水女子大学, 日本",
+          "details": "预计毕业时间: 2025年2月",
+          "thesis": "博士论文: “基于性别和个体差异对音乐刺激的响应，阐明大脑信息处理机制”"
+        },
+        {
+          "year": "2020-2022",
+          "degree": "硕士 先进科学, 御茶水女子大学, 日本",
+          "thesis": "硕士论文: “BrainBERT: 开发一个语言模型，将认知处理的神经关联映射到文本数据”"
+        },
+        {
+          "year": "2012-2016",
+          "degree": "学士,软件工程， 数学与计算机科学学院, 福州大学, 中国"
+        }
+      ]
+    }
+  },
+  "news": {
+    "title": "新闻",
+    "content": "<em>暂无新闻。</em>"
+  },
+  "publications": {
+    "title": "出版物",
+    "international": "国际会议",
+    "domestic": "日本国内会议",
+    "invited": "特邀演讲",
+    "list": {
+      "international": [
+        "[2024] <strong>罗樱</strong>、西田知史、<strong>小林一郎</strong>。<strong>通过音乐刺激探讨大脑EEG信号的个体和性别差异</strong>。2024年第13届软计算与智能系统国际联合会议及第25届高级智能系统国际研讨会（SCIS&ISIS），日本姬路，2024年11月。",
+        "[2023] <strong>罗樱</strong>、<strong>小林一郎</strong>。<strong>BrainLM：利用大型语言模型估算语言刺激引发的大脑活动</strong>。IEEE-SMC2023，夏威夷檀香山。",
+        "[2021] <strong>罗樱</strong>、<strong>小林一郎</strong>。<strong>BrainBERT：基于大脑活动和语言对应关系的语言模型构建方法</strong>。高级智能系统国际研讨会。（线上）",
+        "[2021] <strong>罗樱</strong>、Lis Kanashiro Pereira、<strong>小林一郎</strong>。<strong>OCHADAI at SMM4H-2021 Task 5：通过预训练语言模型集成分类自我报告的可能COVID-19病例推文</strong>。SMM4H 2021，NAACL2021工作坊。（线上）"
+      ],
+      "domestic": [
+        "[2024] <strong>罗樱</strong>、西田知史、<strong>小林一郎</strong>。<strong>通过BrainLM进行多语言学习的多模态模型的集成迁移学习</strong>。JSAI2024，日本静冈。",
+        "[2023] <strong>罗樱</strong>、西田知史、<strong>小林一郎</strong>。<strong>音乐LP数据集：被动与主动音乐刺激下的大脑EEG活动测量</strong>。JSAI2023，日本熊本。",
+        "[2023] <strong>罗樱</strong>、<strong>小林一郎</strong>。<strong>基于语言模型估算大脑状态的一般方法</strong>。NLP2023，日本冲绳。",
+        "[2022] <strong>罗樱</strong>、<strong>小林一郎</strong>。<strong>基于语言刺激估算大脑状态的一般方法</strong>。JSAI2022，日本京都。",
+        "[2021] <strong>罗樱</strong>、<strong>小林一郎</strong>。<strong>BrainBERT：基于大脑活动和文本对应关系的语言模型构建方法</strong>。FSS2021。（线上）"
+      ],
+      "invited": [
+        "[2024] <strong>主旨演讲</strong>，福州大学计算机科学与大数据学院。",
+        "[2023] <strong>主旨演讲</strong>，日本产业技术综合研究所（AIST）。"
+      ]
+    }
+  },
+  "award": {
+    "title": "奖项",
+    "awards": [
+      {
+        "logo": "../logo/jsps-logo.png",
+        "alt": "JSPS logo",
+        "title": "JSPS 研究员（DC2）",
+        "description": "日本学术振兴会（JSPS），御茶水女子大学，2023年4月 - 2025年3月。"
+      },
+      {
+        "logo": "../logo/jsps-logo.png",
+        "alt": "JSPS logo",
+        "title": "特别研究补助金（每月30,000日元）",
+        "description": "日本学术振兴会（JSPS），2024年。"
+      },
+      {
+        "logo": "../logo/ieee-logo.png",
+        "alt": "IEEE logo",
+        "title": "IEEE Brain Best（学生）论文奖提名",
+        "description": "2023年IEEE系统、人类与控制论会议；（脑类别7人）",
+        "link": "https://ieeesmc2023.org/grants/best-student-paper-award/"
+      },
+      {
+        "logo": "../logo/ieee-logo.png",
+        "alt": "IEEE logo",
+        "title": "学生差旅补助：500美元",
+        "description": "2023年IEEE系统、人类与控制论会议授予",
+        "link": "https://ieeesmc2023.org/grants/student-grants/"
+      },
+
+      {
+        "logo": "../logo/jsps-logo.png",
+        "alt": "JSPS logo",
+        "title": "研究资助（JSPS研究员的科研资助金）",
+        "description": "日本学术振兴会每年颁发900,000日元",
+        "link": "https://research-er.jp/projects/view/1226696"
+      },
+      {
+        "logo": "../logo/ochanomizu-logo.png",
+        "alt": "御茶水女子大学logo",
+        "title": "御茶水学术制作奖学金",
+        "description": "授予6名博士生，御茶水女子大学，2022年4月 - 2023年3月。"
+      },
+      {
+        "logo": "../logo/ochanomizu-logo.png",
+        "alt": "御茶水女子大学logo",
+        "title": "Migakazuba支持奖学金（180,000日元）",
+        "description": "御茶水女子大学，2021年8月 - 2022年1月。"
+      },
+      {
+        "logo": "../logo/avanade-logo.png",
+        "alt": "Avanade logo",
+        "title": "Avanade研究鼓励奖",
+        "description": "授予10名研究生，Avanade公司，2021年9月。"
+      },
+      {
+        "logo": "../logo/ai-symposium-logo.png",
+        "alt": "AI 研讨会logo",
+        "title": "最佳演讲奖",
+        "description": "授予第22届高级智能系统国际研讨会，2021年12月。"
+      },
+      {
+        "logo": "../logo/ochanomizu-logo.png",
+        "alt": "御茶水女子大学logo",
+        "title": "Migakazuba支持奖学金（270,000日元）",
+        "description": "御茶水女子大学，2020年7月 - 2021年3月。"
+      },
+      {
+        "logo": "../logo/definesys-logo.png",
+        "alt": "DefineSys logo",
+        "title": "最佳员工奖",
+        "description": "上海DefineSys信息技术有限公司，2019年1月。"
+      },
+      {
+        "logo": "../logo/fuzhou-university-logo.png",
+        "alt": "福州大学logo",
+        "title": "优秀论文及优秀毕业生奖",
+        "description": "福州大学，中国，2016年6月。"
+      },
+      {
+        "logo": "../logo/fuzhou-university-logo.png",
+        "alt": "福州大学logo",
+        "title": "内部及私人奖学金",
+        "description": "福州大学，中国，2012年9月 - 2016年6月。"
+      }
+    ]
+  },
+  "career": {
+    "title": "工作经验或实习",
+    "list": [
+      "<strong>2021</strong>：<br> '信息处理练习'课程的助教，御茶水女子大学人文科学研究生院。",
+      "<strong>2020-2023</strong>：<br> 御茶水女子大学人文科学研究生院小林实验室的研究助理。",
+      "<strong>2016-2019</strong>：<br> 上海DefineSys信息技术有限公司项目经理。<br>- 管理一个20人的团队，负责多个IT项目，重点是系统集成和软件开发。"
+    ]
+  },
+  "links": {
+    "title": "链接",
+    "institutions": {
+      "title": "机构",
+      "list": [
+        "<a href='https://www.ocha.ac.jp/' target='_blank'>御茶水女子大学</a>",
+        "<a href='https://www.koba.is.ocha.ac.jp/kobalab/index.php/ja/home-ja/' target='_blank'>小林实验室，御茶水女子大学</a>",
+        "<a href='https://www.neurology-jp.org/' target='_blank'>日本人工智能学会</a>",
+        "<a href='https://www.neurology-jp.org/' target='_blank'>日本神经学会</a>"
+      ]
+    },
+    "others": {
+      "title": "其他",
+      "list": [
+        "<a href='https://github.com/luoying050601' target='_blank'>github</a>",
+        "<a href='https://orcid.org/0009-0009-1241-0385' target='_blank'>ORCiD</a>",
+        "<a href='https://scholar.google.com/citations?user=0RRZ0rMAAAAJ&hl=en' target='_blank'>Google Scholar</a>"
+      ]
+    }
+  },
+  "contact": {
+    "title": "联系",
+    "email": "电子邮件：<strong>ying.luo [at] is.ocha.ac.jp</strong> 或 <strong>luoying050601[at]gmail.com</strong>",
+    "address": "地址：<strong>东京都文京区大冢2-1-1，112-8610</strong>"
+  },
+  "footer": {
+    "copyright": "版权© 2024 罗樱"
+  }
+}

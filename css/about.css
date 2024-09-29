@@ -1,208 +1,645 @@
-header{
-    width: 100%;
-    box-sizing: border-box;
-    font-family: sans-serif;
-
-}
-body,html{
-    height: 100%;
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.8em;
-    color: #666;
+    padding: 0;
 }
-body{
-    overflow-x: hidden;
+
+h3 {
+    font-size: 1.8em; /* Increase the size */
+    color: #333; /* Darken the color */
+    font-weight: bold; /* Make it bold */
+    margin-bottom: 15px; /* Add some space below */
+    text-transform: uppercase; /* Make text uppercase for emphasis */
+    letter-spacing: 1px; /* Add some spacing between letters */
 }
-.top{
-    position: relative;
-    opacity: 0.8;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url('../img/bg-2.jpg');
-    min-height: 40%;
+
+/* 导航栏样式 */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #333;
+    margin: 0;
 }
-header{
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* 通用 section 样式 */
+section {
+    padding: 50px 20px; /* 增加上下的内边距 */
+    margin-bottom: 40px; /* 每个 section 之间的间距 */
+    background-color: #f9f9f9; /* 柔和的背景颜色 */
+    border-radius: 10px; /* 圆角效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+/* section 标题样式 */
+section h2 {
+    font-size: 2.2em; /* 标题大小 */
+    color: #333; /* 标题颜色 */
+    margin-bottom: 20px; /* 标题与内容的间距 */
+    text-align: center; /* 居中对齐标题 */
+    text-transform: uppercase; /* 全部大写 */
+    letter-spacing: 2px; /* 增加字母间距 */
+}
+
+/* section 文本样式 */
+section p {
+    font-size: 1.2em; /* 文本大小 */
+    color: #666; /* 文本颜色 */
+    line-height: 1.8; /* 增加行间距 */
+    /*text-align: center; !* 文本居中 *!*/
+    margin: 0 auto; /* 居中 */
+    /*max-width: 800px; !* 限制内容的最大宽度 *!*/
+}
+
+/* 固定导航栏样式 */
+nav {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 50px; /* 为固定导航栏预留空间 */
+}
+
+/* Container with flex for left-right alignment */
+.publications-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 0px 20px 100px;
-    z-index: 100000;
-
-
-}
-header .yunjie{
-    position: relative;
-    font-family: sans-serif;
-    font-weight: 12px;
-    color:black;
-    text-decoration: none;
-    font-size: 1em;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-header.sticky{
-    padding: 0px 20px ;
-    background: #000000;
-    opacity: 0.8;
-}
-header ul{
-    position: relative;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-header  ul li{
-    position: relative;
-    list-style: none;
-}
-header ul li a{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #000000;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
-}
-header.sticky .yunjie,
-header.sticky ul li a{
-    color: #ffffff;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
-
-@media(max-width: 500px){
-    .top{
-        background-attachment: scroll;
-    }
+/* Left side container for image and h2 */
+.publications-left {
+    flex: 0 0 35%; /* Takes up 35% of width */
+    text-align: left;
 }
-.top-about{
-    position: absolute;
-    top: 50%;
+
+/* Ensure h2 and image stack together on the left */
+.publications-left h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Left side image styling */
+.publications-left .publications-image img {
     width: 100%;
-    text-align: center;
-    color:black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 48px;
-    letter-spacing: 2.5px;
+    height: auto;
+    border-radius: 10px;
 }
 
+/* Right side container for content */
+.publications-content {
+    flex: 0 0 60%; /* Takes up 60% of the width */
+    padding-left: 20px;
+    text-align: left;
+}
 
+/* Styling for the h3 headings */
+.publications-content h3 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: left;
+}
 
-/*-- about-us --*/
-.out{
-    width: auto;
-    margin: 80px auto;
-    -webkit-display: flex;
+/* List items (li) styling */
+.publications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.publications-list li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    word-wrap: break-word;
+    color: #555;
+}
+
+/* 联系方式部分 */
+.contact-links-inline {
+    margin-top: 30px;
     display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
+    justify-content: center; /* 居中对齐 */
+    align-items: center;
+    gap: 15px; /* 控制每个链接和分隔符的间距 */
+}
+
+.contact-links-inline a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    display: flex;
     align-items: center;
 }
-.myphoto{
-    width: 40%;
-    float: left;
-    margin-right: 80px;
-}
-.arjen,.skill,.scorer{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12pt;
+
+.contact-links-inline a i {
+    margin-right: 5px;
+    font-size: 1.5em; /* 调整图标大小 */
+    vertical-align: middle;
 }
 
-.edu,.work,.SAC{
-    clear: both;
-    text-align: center;
-    margin: 0% auto;
-    font-family:monospace;
-    font-style: normal;
+.contact-links-inline a:hover {
+    color: #0056b3;
 }
-.education{
-    width: auto;
-    margin: 50px auto;
-    -webkit-display: flex;
+
+/* Awards Section */
+/* Awards Section */
+#awards {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#awards h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    /*text-align: center;*/
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Award List Container */
+.award-list {
     display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px; /* 间距 */
 }
 
-.utokyo{
-    width: 280px;
-}
-
-.tokaiw{
-    float: left;
-    margin-right: 50px;
-}
-.ubcw{
-    float: left;
-    
-}
-.tokai , .ubc{
-    width: 150px;
-    float: left;
-}
-.tokai{
-    margin-left: 20px;
-}
-.ubc{
-    margin-left: 40px;
-}
-
-.work1{
-    margin: 50px auto;
-    -webkit-display: flex;
+/* Award Item (Card) */
+.award-item {
     display: flex;
-    -webkit-justify-content: center;
+    /*align-items: flex-start;*/
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    min-height: 100px;
+}
+
+.award-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.award-logo {
+    flex: 0 0 180px; /* 将宽度增加到120px */
+    display: flex;
     justify-content: center;
-    -webkit-align-items: center;
     align-items: center;
-}
-.ft{
-    width: 150px;
-}
-#li1{
-    padding: 0 16px;
-    margin-bottom: 3px;
-}
-#li2{
-    padding: 0 0 0 16px;
-}
-.FS{
-    margin-left: 24px;
-    margin-right: 30px;
-}
-.tokyo{
-    width: 150px;
-}
-.tokyow{
-    margin-right: 50px;
-}
-.fab{
-    width: 150px;
-}
-.fabw{
-    margin-bottom: 3px;
-    margin-left: 30px;
+    margin-right: 20px;
 }
 
-.SACw{
-    text-align: center;
+.award-logo img {
+    max-width: 100%; /* 确保图像不会超出容器宽度 */
+    max-height: 80px; /* 设置最大高度，防止图片过大 */
+    height: auto; /* 保持比例 */
+    display: block; /* 确保图片是块状元素，避免出现额外的空隙 */
+
+}
+/* Award Content */
+.award-content {
+    flex: 1;
 }
 
-.footer{
+.award-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.award-content p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #666;
+}
+
+.award-content a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.award-content a:hover {
+    text-decoration: underline;
+}
+
+/* Style the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #333;
+    display: block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Style the active language dropdown */
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+/* Flexbox layout to place email and address side by side */
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 20px;
+    /*background-color: #f0f4f7; !* Soft background to stand out *!*/
+    border-radius: 8px;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Styling for individual contact items (email and address) */
+.contact-item {
+    flex: 0 0 48%; /* Set equal width for both items */
+    text-align: left; /* Align text to the left for consistency */
+}
+
+/* Contact information styling */
+.contact-info {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.8;
+}
+
+.contact-info i {
+    color: #007bff;
+    margin-right: 8px;
+    font-size: 1.4em;
+    vertical-align: middle;
+}
+
+.contact-info strong {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Ensure hover effect is consistent */
+.contact-info:hover {
+    color: #0056b3;
+}
+
+/* Ensure the html and body take up full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the main content takes up full space, pushing the footer down if necessary */
+main {
+    flex: 1; /* Ensures the main section grows to fill the available space */
+}
+
+/* Style the footer */
+.footer-container {
+    background-color: #333;
+    color: white;
     text-align: center;
-    font-size: 9px;
-    padding: 15px;
-    align-self: center;
+    padding: 20px 0;
+    font-size: 1.2em;
+    width: 100%;
+    left: 0;
+}
+
+/* If the content is shorter than the viewport, ensure footer is at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+/* 左侧的图片轮播和标题保持一致 */
+.publications-left {
+    flex: 0 0 35%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.publications-left h2 {
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2.5em;
+}
+
+/* 右边文字内容 */
+.publications-content {
+    flex: 0 0 60%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* 关于联系人信息的样式，居中显示 */
+.contact-links-inline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/*.carousel {*/
+/*    display: flex;*/
+/*    overflow: hidden; !* 确保只显示一张图片 *!*/
+/*    width: 100%; !* 容器宽度 *!*/
+/*}*/
+
+/*.carousel-item {*/
+/*    min-width: 100%; !* 每张图片占据100%宽度 *!*/
+/*    transition: transform 0.5s ease-in-out; !* 平滑过渡效果 *!*/
+/*}*/
+
+/*.carousel img {*/
+/*    width: 100%; !* 确保图片自适应容器宽度 *!*/
+/*    height: auto;*/
+/*}*/
+
+.publications-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.publications-left, .publications-content {
+    flex: 1; /* 两部分都占据相同的空间 */
+    padding: 20px;
+}
+
+/*.publications-left {*/
+/*    max-width: 400px; !* 控制左侧图片轮播的宽度 *!*/
+/*}*/
+
+        /*!* 列表样式 *!*/
+        .publications-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .publications-list li {
+            margin-bottom: 20px; /* 增加列表项之间的距离 */
+            line-height: 1.8; /* 增加行间距 */
+            font-size: 18px; /* 增大字体 */
+            color: #333;
+            word-wrap: break-word; /* 让长文本自动换行 */
+            text-align: left; /* 左对齐 */
+        }
+
+        /* 列表前的圆点符号 */
+        .publications-list li::before {
+            content: "• "; /* 列表前添加圆点符号 */
+            color: #555;
+            font-size: 1.2em; /* 增大圆点 */
+        }
+
+        /* Highlight 样式，给当前选中项添加轻微的强调 */
+.highlight {
+    color: #3498db; /* 淡蓝色字体 */
+    font-weight: bold; /* 字体加粗 */
+    border-bottom: 2px solid #3498db; /* 下划线 */
+    padding-bottom: 5px;
+    transition: all 0.3s ease; /* 添加一个平滑的过渡效果 */
+}
+
+/* 鼠标悬停时的效果 */
+nav ul li a:hover {
+    color: #2980b9; /* 略深的蓝色 */
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+
+.publications-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the left and right sections */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.publications-left {
+    flex: 1;
+    max-width: 40%;
+    /*min-height: 400px; !* Minimum height to balance layout *!*/
+    /*background-color: #f0f0f0; !* Light background to act as a placeholder *!*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.publications-left .carousel {
+    width: 100%;
+    height: 300px; /* Set a height for the image carousel */
+    /*background-color: #e0e0e0; !* Background placeholder for missing images *!*/
+}
+
+
+.publications-content {
+    flex: 2;
+    max-width: 60%;
+    text-align: left;
+}
+
+ul.publications-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px; /* Space between paragraphs and lists */
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.contact-links-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.contact-links-inline span {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+.carousel-container {
+    overflow: hidden; /* 隐藏超出可视区域的部分 */
+    width: 100%; /* 确保容器宽度与视图一致 */
+}
+
+
+.carousel-item {
+    flex: 0 0 100%;  /* 每个 item 占据 100% 宽度 */
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%; /* 图片宽度填充父元素 */
+    height: auto; /* 保持图片的纵横比 */
+    max-height: 400px; /* 限制图片的最大高度 */
+    object-fit: contain; /* 让图片保持比例，填充父元素 */
+    padding: 10px; /* 增加上下 padding，如果宽度不够图片会被居中 */
+    visibility: visible;  /* 确保图片可见 */
+    z-index: 1;
+
+}
+
+.carousel {
+    display: flex;
+    /*overflow: hidden; !* 确保幻灯片滚动时只显示一个 *!*/
+    /*width: 100%; !* 让carousel宽度100% *!*/
+    /*height: 400px; !* 固定carousel的高度 *!*/
+    /*justify-xcontent: center;*/
+    /*align-items: center; !* 上下居中 *!*/
+    /*overflow: hidden;  !* 隐藏超出容器的内容 *!*/
+}
+
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    z-index: 1000; /* 确保dots在图片上方显示 */
+    position: relative;
+}
+
+.dot {
+     width: 12px; /* 增大点的大小 */
+    height: 12px;
+    margin: 0 5px;
+    background-color: gray; /* 默认灰色背景 */
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7; /* 使dots半透明 */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* 添加hover效果 */
+
+}
+
+.dot:hover {
+    opacity: 1; /* 鼠标悬停时完全不透明 */
+}
+
+.dot.active {
+    background-color: black; /* 激活状态时点的颜色 */
+}
+
+#contact {
+    padding: 10px 0; /* 减少整个块的上下 padding */
+}
+
+.publications-container {
+    /*display: flex;*/
+    /*align-items: flex-start; !* 让左侧和右侧内容对齐顶部 *!*/
+    padding: 0; /* 去掉额外的 padding */
+    /*margin: 0 auto; !* 居中对齐 *!*/
+}
+
+.publications-left {
+    /*flex: 0 0 20%; !* 左侧区域宽度可调节，根据需要缩小 *!*/
+    padding: 0; /* 减少内边距 */
+}
+
+.publications-content {
+    flex: 1; /* 右侧内容占据剩余空间 */
+    padding: 10px 0; /* 减少上下 padding */
+    margin-left: 20px; /* 设置适当的左右间距 */
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap; /* 保证多个内容项能自适应屏幕宽度 */
+    padding: 10px 0; /* 减少上下 padding */
+}
+
+.contact-item {
+    padding: 5px 10px; /* 减少单个联系信息的 padding */
+    margin-bottom: 10px; /* 添加一点底部空间 */
+    flex: 1 1 45%; /* 让多个联系信息平分布局空间 */
 }

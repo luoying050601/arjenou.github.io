@@ -108,24 +108,93 @@ header.sticky .logo,
 header.sticky ul li a{
     color: #ffffff;
 }
+.btn-a {
+    display: flex;
+    justify-content: center; /* 将按钮居中对齐 */
+    align-items: center; /* 垂直方向居中 */
+    margin-top: 20px;
+    gap: 20px; /* 控制按钮之间的间距为 20px */
+    flex-wrap: wrap; /* 如果屏幕宽度不足，按钮会换行 */
+}
 
-
-.chinese{
-    background-color:rgb(169, 164, 168) ;
+.chinese {
+    background-color: rgb(220, 20, 60); /* 深红色背景 */
+    color: white;
     text-decoration: none;
     font-size: 12px;
-    
+    padding: 10px 20px;
+    border-radius: 5px;
 }
-.japanese{
-    background-color: rgb(169, 164, 168);
+
+.japanese {
+    background-color: rgb(144, 238, 144); /* 浅绿色背景 */
+    color: rgb(34, 139, 34); /* 深绿色文字 */
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 12px;
-    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(34, 139, 34); /* 深绿色边框 */
+    transition: background-color 0.5s ease, color 0.5s ease; /* 添加动态过渡效果 */
 }
-.btn-a{
-    width: 250px;
-    margin: 0 auto;
+
+/* Container for the whole page */
+body {
+    display: flex;
+    flex-direction: column;
 }
+
+
+.english {
+    background-color: rgb(30, 144, 255); /* 蓝色背景 */
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* 悬停时的样式变化 */
+.chinese:hover {
+    background-color: rgb(255, 99, 71); /* 悬停时背景颜色变化 */
+    color: white; /* 悬停时文字颜色变化 */
+}
+.japanese:hover {
+    background-color: rgb(50, 205, 50); /* 悬停时的绿色变深 */
+    color: white; /* 悬停时文字变成白色 */
+}
+
+.english:hover {
+    background-color: rgb(0, 123, 255); /* 悬停时背景颜色变化 */
+    color: white; /* 悬停时文字颜色变化 */
+}
+/*.chinese{*/
+/*    background-color: rgb(220, 20, 60); !* 深红色，体现中国特色 *!*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    font-size: 12px;*/
+/*    border-radius: 5px;*/
+/*}*/
+/*.japanese {*/
+/*    background-color: rgb(255, 240, 245); !* 浅粉色背景 *!*/
+/*    color: rgb(139, 0, 0); !* 深红色文字 *!*/
+/*    text-decoration: none;*/
+/*    font-size: 12px;*/
+/*    margin-left: 10px;*/
+/*    border: 1px solid rgb(139, 0, 0); !* 深红色边框 *!*/
+/*    border-radius: 5px;*/
+/*    padding: 10px 20px; !* 增加按钮的填充，让按钮更具吸引力 *!*/
+/*}*/
+/*.english{*/
+/*    background-color: rgb(30, 144, 255); !* 蓝色背景 *!*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    font-size: 12px;*/
+/*    border-radius: 5px;*/
+
+/*}*/
+/*.btn-a{*/
+/*    width: 250px;*/
+/*    margin: 0 auto;*/
+/*}*/
 .btn{
     padding: 2px 40px;
     color: white;
@@ -133,16 +202,52 @@ header.sticky ul li a{
     opacity: 0.7;
     border-radius: 8px;
 }
-.btn:hover{
-    opacity: 1;
+
+/*.btn:hover{*/
+/*    opacity: 1;*/
+/*}*/
+/*.footer{*/
+/*    font-size: 9px;*/
+/*    padding: 15px;*/
+/*    align-self: center;*/
+/*}*/
+
+/* Ensure .pimg1 is positioned relatively */
+/*.pimg1 {*/
+/*    position: relative;*/
+/*    height: 100vh; !* Set height to make sure it takes full screen *!*/
+/*    !*background-image: url('your-background-image.jpg');*!*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+
+/* Position the copyright footer at the bottom of the image */
+/* Position the footer absolutely at the bottom of the page */
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for contrast */
 }
-.footer{
-    font-size: 9px;
-    padding: 15px;
-    align-self: center;
+
+.footer {
+    color: white;
+    font-size: 14px;
+    padding: 10px 0;
 }
 @media(max-width: 500px){
     .pimg1{
-        background-attachment: scroll;
+        flex: 1;
+    position: relative;
+    /*background-image: url('your-background-image.jpg');*/
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 50px); /* Adjust height to leave space for the header */
     }
+}
+
+.pimg1 {
+    flex-grow: 1;
+    height: 100%;
 }

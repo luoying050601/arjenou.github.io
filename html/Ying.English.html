@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="../css/about.css" rel="stylesheet">
+    <!-- 引入 Font Awesome 图标库 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Sakura</title>
+    <script src="../js/language.js">
+    </script> <!-- Load the language.js script -->
+    <script>
+        window.onload = function () {
+
+            let currentSlideIndex = 0;
+            // const slides = document.querySelectorAll('.carousel-item');
+            // const dots = document.querySelectorAll('.dot');
+            const slides = document.querySelectorAll('.carousel-item img');
+            slides.forEach((img, index) => {
+                img.onload = () => {
+                    console.log(`Image ${index} loaded with size:`, img.naturalWidth, img.naturalHeight);
+                };
+            });
+            let autoSlideTimer;
+
+            // 显示当前幻灯片
+            function showSlides() {
+                const slides = document.querySelectorAll('.carousel-item');
+                const dots = document.querySelectorAll('.dot');
+                const carousel = document.querySelector('.carousel');
+
+                // 确保 currentSlideIndex 在正确范围内
+                if (currentSlideIndex >= slides.length) {
+                    currentSlideIndex = 0;
+                }
+                if (currentSlideIndex < 0) {
+                    currentSlideIndex = slides.length - 1;
+                }
+
+                // 获取容器的宽度
+                const itemWidth = slides[0].offsetWidth; // 获取每个图片的宽度
+
+                // 使用 translateX 来移动滑块
+                carousel.style.transform = `translateX(-${currentSlideIndex * itemWidth}px)`; // 使用px值移动
+
+                // 更新导航圆点的状态
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[currentSlideIndex].classList.add('active');
+            }
+
+            // 通过点击切换到特定幻灯片
+            function currentSlide(n) {
+                console.log("Current slide clicked: ", n); // 确认点击事件是否触发
+                clearTimeout(autoSlideTimer); // 停止自动滚动
+                currentSlideIndex = n - 1;    // 更新索引
+                showSlides();
+                autoSlide();                  // 重新开始自动滚动
+            }
+
+            // 自动滚动功能
+            function autoSlide() {
+                autoSlideTimer = setTimeout(() => {
+                    currentSlideIndex++;
+                    showSlides();
+                    autoSlide();  // 递归调用，实现持续自动滚动
+                }, 5000); // 每5秒切换一次
+            }
+
+            showSlides();  // 初始化显示
+            autoSlide();   // 开始自动滚动
+
+            // 暴露全局函数以便点击圆点时调用
+            window.currentSlide = currentSlide;
+
+            loadLanguage('en');
+        };
+
+
+    </script>
+</head>
+
+<body>
+<!-- 上部 导航栏 -->
+<header>
+    <nav>
+        <ul>
+            <li><a class="highlight" href="#AboutMe" id="home-link"></a></li>
+            <li><a href="#news" id="news-link"></a></li>
+            <li><a href="#publications" id="publications-link"></a></li>
+            <li><a href="#awards" id="awards-link"></a></li>
+            <li><a href="#career" id="career-link"></a></li>
+            <li><a href="#links" id="links-link"></a></li>
+            <li><a href="#contact" id="contact-link"></a></li>
+            <li class="dropdown">
+                <a class="dropbtn" href="javascript:void(0)">Language</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="loadLanguage('en')">English</a>
+                    <a href="#" onclick="loadLanguage('zh')">中文</a>
+                    <a href="#" onclick="loadLanguage('jp')">日本語</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <div class="publications-container">
+        <div class="publications-left">
+            <h2 id="about-title"></h2>
+            <div class="carousel-container">
+                <!-- Image slider section -->
+                <div class="carousel">
+                    <div class="carousel-item"><img alt="Photo 1" src="../img/photo1.png"/></div>
+                    <div class="carousel-item"><img alt="Photo 2" src="../img/photo2.png"/></div>
+                    <div class="carousel-item"><img alt="Photo 3" src="../img/photo3.png"/></div>
+                    <div class="carousel-item"><img alt="Photo 4" src="../img/photo4.png"/></div>
+                    <div class="carousel-item"><img alt="Photo 5" src="../img/photo5.png"/></div>
+                    <div class="carousel-item"><img alt="Photo 6" src="../img/photo6.png"/></div>
+                    <div class="carousel-item"><img alt="Photo 7" src="../img/photo7.png"/></div>
+                    <div class="carousel-item"><img alt="Photo 8" src="../img/photo8.png"/></div>
+                    <div class="carousel-item"><img alt="Photo 9" src="../img/photo9.png"/></div>
+                    <div class="carousel-item"><img alt="Photo 10" src="../img/photo10.png"/></div>
+                </div>
+
+                <!-- Dots for navigation -->
+                <div class="carousel-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="publications-content">
+            <p id="about-content1"></p>
+            <p id="about-content2"></p>
+            <h3 id="education-title"></h3>
+            <ul class="publications-list" id="education-list"></ul>
+            <div class="contact-links-inline">
+                <span><a href='https://www.linkedin.com/in/ying-luo-cjl' target="_blank"><i
+                        class="fab fa-linkedin"></i> LinkedIn</a></span>
+                <span>|</span>
+                <span><a href='mailto:luoying050601@gmail.com' target="_blank"><i class="fas fa-envelope"></i> Mail</a></span>
+                <span>|</span>
+                <span><a href='https://scholar.google.com/citations?user=0RRZ0rMAAAAJ&hl=en' target="_blank"><i
+                        class="fas fa-graduation-cap"></i> Google Scholar</a></span>
+                <span>|</span>
+                <span><a href="../cv/Yingluo_CV_Postdoc2025.pdf" target="_blank"><i class="fas fa-file-alt"></i> CV</a></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="news">
+    <div class="publications-container">
+        <div class="publications-left">
+            <h2 id="news-title"></h2>
+        </div>
+        <div class="publications-content">
+            <p id="news-content"></p>
+        </div>
+    </div>
+</section>
+
+<!-- Add similar sections for publications, awards, career, links, and contact -->
+<section id="publications">
+    <div class="publications-container">
+        <!-- Left Side: Image and H2 -->
+        <div class="publications-left">
+            <h2 id="publications-title"></h2>
+        </div>
+        <!-- Right Side: Conference Publications and Invited Talks -->
+        <div class="publications-content">
+            <h3 id="international-conference-title"></h3>
+            <ul class="publications-list" id="international-conference-list"></ul>
+
+            <h3 id="domestic-conference-title"></h3>
+            <ul class="publications-list" id="domestic-conference-list"></ul>
+
+            <h3 id="invited-talk-title"></h3>
+            <ul class="publications-list" id="invited-talk-list"></ul>
+        </div>
+    </div>
+</section>
+
+<section id="awards">
+    <div class="publications-container">
+        <!-- Left Side: Image and H2 -->
+        <div class="publications-left">
+            <h2 id="awards-title"></h2>
+        </div>
+        <!-- Right Side: Awards Content -->
+        <div class="publications-content" id="awards-content"></div>
+    </div>
+</section>
+
+<section id="career">
+    <div class="publications-container">
+        <!-- Left Side: Image and H2 -->
+        <div class="publications-left">
+            <h2 id="career-title"></h2>
+        </div>
+        <!-- Right Side: Career Content -->
+        <div class="publications-content">
+            <ul class="publications-list" id="career-list"></ul>
+        </div>
+    </div>
+</section>
+
+<section id="links">
+    <div class="publications-container">
+        <!-- Left Side: Image and H2 -->
+        <div class="publications-left">
+            <h2 id="links-title"></h2>
+        </div>
+        <!-- Right Side: Links Content -->
+        <div class="publications-content">
+            <h3 id="institutions-title"></h3>
+            <ul class="publications-list" id="institutions-list"></ul>
+
+            <h3 id="others-title"></h3>
+            <ul class="publications-list" id="others-list"></ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="publications-container">
+        <!-- Left Side: Image and H2 -->
+        <div class="publications-left">
+            <h2 id="contact-title"></h2>
+        </div>
+        <!-- Right Side: Contact Information -->
+        <div class="publications-content contact-row">
+            <div class="contact-item" id="email-info"></div>
+            <div class="contact-item" id="address-info"></div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-container">
+    <p id="footer-copyright"></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+{
+  "header": {
+    "home": "Ying Luo",
+    "news": "News",
+    "publications": "Publications",
+    "awards": "Awards",
+    "career": "Career",
+    "links": "Links",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "content1": "Hello! My name is <strong>Ying Luo</strong>. I am a Ph.D. candidate in Advanced Sciences at Ochanomizu University. My research focuses on exploring the intersection of neuroscience and machine learning, particularly in analyzing brain activities under various stimuli.",
+    "content2": "In my free time, I enjoy traveling and experiencing different cultures. I am passionate about the potential of AI to advance human knowledge and improve daily life. Feel free to browse my publications to learn more about my work.",
+    "email": "Email: <strong>ying.luo [at] is.ocha.ac.jp</strong> or <strong>luoying050601[at]gmail.com</strong>",
+    "address": "Address: <strong>2-1-1 Otsuka, Bunkyo-ku, Tokyo 112-8610</strong>",
+    "education": {
+      "title": "Education",
+      "degrees": [
+        {
+          "year": "2022-2025",
+          "degree": "Ph.D. in Advanced Sciences, Ochanomizu University",
+          "details": "Expected Graduation: Feb. 2025",
+          "thesis": "Doctoral Dissertation: “Elucidating Brain Information Processing Mechanisms Based on Sex and Individual Differences in Response to Musical Stimuli”"
+        },
+        {
+          "year": "2020-2022",
+          "degree": "M.Sc. in Advanced Sciences, Ochanomizu University",
+          "thesis": "Master’s Thesis: “BrainBERT: Developing a Language Model to Map Neural Correlates of Cognitive Processing to Textual Data”"
+        },
+        {
+          "year": "2012-2016",
+          "degree": "Bachelor in Software Engineering, College of Mathematics and Computer Science, Fuzhou University, China"
+        }
+      ]
+    }
+  },
+  "news": {
+    "title": "News",
+    "content": "<em>No News so far.</em>"
+  },
+  "publications": {
+    "title": "Publications",
+    "international": "International Conference",
+    "domestic": "Domestic Conference (in Japan)",
+    "invited": "Invited Talk",
+    "list": {
+      "international": [
+        "[2024] <strong>Ying Luo</strong>, Satoshi Nishida, Ichiro Kobayashi. <strong>Exploring Individual and Sex Differences from Brain EEG Signals under Music Stimuli</strong>. 2024 Joint 13th International Conference on Soft Computing and Intelligent Systems and 25th International Symposium on Advanced Intelligent Systems (SCIS&ISIS), Himeji, Japan, Nov., 2024.",
+        "[2023] <strong>Ying Luo</strong>, Ichiro Kobayashi. <strong>BrainLM: Estimation of Brain Activity Evoked Linguistic Stimuli utilizing Large Language</strong>. IEEE-SMC2023. Honolulu, Hawaii.",
+        "[2021] <strong>Ying Luo</strong>, Ichiro Kobayashi. <strong>BrainBERT: An Approach to Language Model Capturing the Correspondence between Brain Activities and Language</strong>. International Symposium on Advanced Intelligent System. (online)",
+        "[2021] <strong>Ying Luo</strong>, Lis Kanashiro Pereira, Ichiro Kobayashi. <strong>OCHADAI at SMM4H-2021 Task 5: Classifying self-reporting tweets on potential cases of COVID-19 by ensembling pre-trained language models</strong>. Workshop of SMM4H 2021, NAACL2021. (online)"
+      ],
+      "domestic": [
+        "[2024] <strong>Ying Luo</strong>, Satoshi Nishida, Ichiro Kobayashi. <strong>Ensemble Transfer Learning for Multilingual Learning via BrainLM: A Multi-modal Model</strong>. JSAI2024. Shizuoka.",
+        "[2023] <strong>Ying Luo</strong>, Satoshi Nishida, Ichiro Kobayashi. <strong>The Music LP Dataset: EEG measurement of human brain activity under passive and active musical stimulation</strong>. JSAI2023. Kumamoto.",
+        "[2023] <strong>Ying Luo</strong>, Ichiro Kobayashi. <strong>An approach to general-purpose language modeling for brain state estimation</strong>. NLP2023. Okinawa.",
+        "[2022] <strong>Ying Luo</strong>, Ichiro Kobayashi. <strong>Estimation of brain states under linguistic stimuli using a general-purpose language model</strong>. JSAI2022. Kyoto.",
+        "[2021] <strong>Ying Luo</strong>, Ichiro Kobayashi. <strong>BrainBERT: An approach to language model building based on the correspondence between brain activity and text</strong>. FSS2021. (online)"
+      ],
+      "invited": [
+        "[2024] <strong>Plenary Talk</strong>, School of Computer Science and Big Data, Fuzhou University.",
+        "[2023] <strong>Plenary Talk</strong>, National Institute of Advanced Industrial Science and Technology (AIST)."
+      ]
+    }
+  },
+    "award": {
+    "title": "Awards",
+         "awards": [
+    {
+      "logo": "../logo/jsps-logo.png",
+      "alt": "JSPS Logo",
+      "title": "JSPS Research Fellowship (DC2)",
+      "description": "Japan Society for the Promotion of Science (JSPS), Ochanomizu University, April 2023 – March 2025."
+    }, {
+      "logo": "../logo/jsps-logo.png",
+      "alt": "JSPS Logo",
+      "title": "Special Research Grant Allowance (30,000 yen per month)",
+      "description": "Japan Society for the Promotion of Science (JSPS), 2024."
+    },
+    {
+      "logo": "../logo/ieee-logo.png",
+      "alt": "IEEE Logo",
+      "title": "IEEE Brain Best (Student) Paper Award",
+      "description": "Candidate by the 2023 IEEE Conference on Systems, Man, and Cybernetics (IEEE SMC 2023); (7 in brain categories)",
+      "link": "https://ieeesmc2023.org/grants/best-student-paper-award/"
+    },
+    {
+      "logo": "../logo/ieee-logo.png",
+      "alt": "IEEE Logo",
+      "title": "Student Travel Grant: $500",
+      "description": "Awarded by the 2023 IEEE Conference on Systems, Man, and Cybernetics (IEEE SMC 2023)",
+      "link": "https://ieeesmc2023.org/grants/student-grants/"
+    },
+
+    {
+      "logo": "../logo/jsps-logo.png",
+      "alt": "JSPS Logo",
+      "title": "Research Grant (Grant-in-Aid for JSPS Fellows)",
+      "description": "900,000 yen per year awarded by Japan Society for the Promotion of Science (JSPS)",
+      "link": "https://research-er.jp/projects/view/1226696"
+    },
+    {
+      "logo": "../logo/ochanomizu-logo.png",
+      "alt": "Ochanomizu University Logo",
+      "title": "Ochanomizu Academic Production Fellowship",
+      "description": "Awarded to 6 doctoral students, Ochanomizu University, April 2022 – March 2023."
+    },
+    {
+      "logo": "../logo/ochanomizu-logo.png",
+      "alt": "Ochanomizu University Logo",
+      "title": "Migakazuba Support Scholarship (180,000 yen)",
+      "description": "Ochanomizu University, August 2021 – January 2022."
+    },
+    {
+      "logo": "../logo/avanade-logo.png",
+      "alt": "Avanade Logo",
+      "title": "Avanade Research Encouragement Award",
+      "description": "Awarded to 10 graduate students, Avanade Corporation, September 2021."
+    },
+    {
+      "logo": "../logo/ai-symposium-logo.png",
+      "alt": "AI Symposium Logo",
+      "title": "Best Presentation Award",
+      "description": "Awarded at the 22nd International Symposium on Advanced Intelligent Systems, December 2021."
+    },
+    {
+      "logo": "../logo/ochanomizu-logo.png",
+      "alt": "Ochanomizu University Logo",
+      "title": "Migakazuba Support Scholarship (270,000 yen)",
+      "description": "Ochanomizu University, July 2020 – March 2021."
+    },
+    {
+      "logo": "../logo/definesys-logo.png",
+      "alt": "DefineSys Logo",
+      "title": "Best Employee Award",
+      "description": "Awarded by DefineSys Information Technology, Shanghai, China, January 2019."
+    },
+    {
+      "logo": "../logo/fuzhou-university-logo.png",
+      "alt": "Fuzhou University Logo",
+      "title": "Excellent Thesis and Outstanding Graduate Award",
+      "description": "Awarded by Fuzhou University, China, June 2016."
+    },
+    {
+      "logo": "../logo/fuzhou-university-logo.png",
+      "alt": "Fuzhou University Logo",
+      "title": "Internal and Private Scholarships",
+      "description": "Awarded by Fuzhou University, China, September 2012 – June 2016."
+    }
+  ]
+    },
+
+  "career": {
+    "title": "Work Experience or Internship",
+    "list": [
+      "<strong>2021</strong>:<br> Teaching Assistant in 'Information Processing Exercise', Graduate School of Humanities and Sciences, Ochanomizu University.",
+      "<strong>2020-2023</strong>:<br> Research Assistant in Kobayashi Laboratory, Graduate School of Humanities and Sciences, Ochanomizu University.",
+      "<strong>2016-2019</strong>: <br>Project Manager in Shanghai Definesys Information Technology Co., Ltd. <br>- Managed a team of 20 members on various IT projects, focusing on system integration and software development."
+    ]
+  },
+  "links": {
+    "title": "Links",
+    "institutions": {
+      "title": "Institutions",
+      "list": [
+        "<a href='https://www.ocha.ac.jp/' target='_blank'>Ochanomizu University</a>",
+        "<a href='https://www.koba.is.ocha.ac.jp/kobalab/index.php/ja/home-ja/' target='_blank'>Ichiro Kobayashi Lab. Ochanomizu University</a>",
+        "<a href='https://www.neurology-jp.org/' target='_blank'>The Japanese Society for Artificial Intelligence</a>",
+        "<a href='https://www.neurology-jp.org/' target='_blank'>Societas Neurologica Japonica</a>"
+      ]
+    },
+    "others": {
+      "title": "Others",
+      "list": [
+        "<a href='https://github.com/luoying050601' target='_blank'>github</a>",
+        "<a href='https://orcid.org/0009-0009-1241-0385' target='_blank'>ORCiD</a>",
+        "<a href='https://scholar.google.com/citations?user=0RRZ0rMAAAAJ&hl=en' target='_blank'>Google Scholar</a>"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email: <strong>ying.luo [at] is.ocha.ac.jp</strong> or <strong>luoying050601[at]gmail.com</strong>",
+    "address": "Address: <strong>2-1-1 Otsuka, Bunkyo-ku, Tokyo 112-8610</strong>"
+  },
+  "footer": {
+    "copyright": "© 2024 Ying Luo"
+  }
+}

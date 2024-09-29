@@ -1,0 +1,210 @@
+header{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body,html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8em;
+    color: #666;
+}
+body{
+    overflow-x: hidden;
+}
+.top{
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../img/bg-2.jpg');
+    min-height: 40%;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0px 20px 100px;
+    z-index: 100000;
+
+
+}
+header .yunjie{
+    position: relative;
+    font-family: sans-serif;
+    font-weight: 12px;
+    color:black;
+    text-decoration: none;
+    font-size: 1em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header.sticky{
+    padding: 0px 20px ;
+    background: #000000;
+    opacity: 0.8;
+}
+header ul{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header  ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+header.sticky .yunjie,
+header.sticky ul li a{
+    color: #ffffff;
+}
+
+
+@media(max-width: 500px){
+    .top{
+        background-attachment: scroll;
+    }
+}
+.top-about{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    letter-spacing: 2.5px;
+}
+
+
+
+/*-- about-us --*/
+.out{
+    width: auto;
+    margin: 80px auto;
+    -webkit-display: flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.myphoto{
+    width: 40%;
+    float: left;
+    margin-right: 80px;
+}
+.arjen,.skill,.scorer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+}
+
+.edu,.work,.SAC{
+    clear: both;
+    text-align: center;
+    margin: 0% auto;
+    font-family:monospace;
+    font-style: normal;
+}
+.education{
+    width: auto;
+    margin: 50px auto;
+    -webkit-display: flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.utokyo{
+    width: 280px;
+}
+
+.tokaiw{
+    float: left;
+    margin-right: 50px;
+}
+.ubcw{
+    float: left;
+    
+}
+.tokai , .ubc{
+    width: 150px;
+    float: left;
+}
+.tokai{
+    margin-left: 20px;
+}
+.ubc{
+    margin-left: 40px;
+}
+
+
+.work1{
+    margin: 50px auto;
+    -webkit-display: flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+.ft{
+    width: 150px;
+}
+#li1{
+    padding: 0 16px;
+    margin-bottom: 3px;
+}
+#li2{
+    padding: 0 0 0 16px;
+}
+.FS{
+    margin-left: 24px;
+    margin-right: 30px;
+}
+.tokyo{
+    width: 150px;
+}
+.tokyow{
+    margin-right: 50px;
+}
+.fab{
+    width: 150px;
+}
+.fabw{
+    margin-bottom: 3px;
+    margin-left: 30px;
+}
+
+.SACw{
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    font-size: 9px;
+    padding: 15px;
+    align-self: center;
+}

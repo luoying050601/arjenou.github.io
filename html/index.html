@@ -3,47 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/index.css">
-    <title>Arjen</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="../css/index.css" rel="stylesheet">
+    <title>Home</title>
 </head>
 
 <body>
     <!-- 上部 ------------------------------------------------------------------------------------>
     <header>
-        <a href="#" class="logo">Yunjie</a>
+        <a class="logo" href="#">YING LUO</a>
         <ul>
             <li><a href="../html/index.html">Home</a></li>
-            <li><a href="../html/Arjen.Chinese.html">About</a></li>
         </ul>
     </header>
-    <section class="banner"></section> 
+
+    <section class="banner"></section>
+
     <script type="text/javascript">
-    window.addEventListener("scroll",function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky",window.scrollY > 0);
-    })
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
     </script>
+
     <!-- 中部 ------------------------------------------------------------------------------------>
     <div class="pimg1">
         <div class="ptext">
             <span class="border">
-                Arjen
-            <h2>SINCE 2021 | TOKYO</h2>
+                Sakura
+                <h2>SINCE 2019 | China -> Japan</h2>
             </span>
+            <div class="btn-a">
+                <a class="btn english" href="Ying.English.html">English</a>
+                <a class="btn chinese" href="Ying.Chinese.html">中文</a>
+                <a class="btn japanese" href="Ying.Japanese.html">日本語</a>
+            </div>
         </div>
     </div>
-    <section class="section section-light">
-        <h2>Select your language for localized experience</h2>
-        <div class="btn-a">
-            <a href="../html/Arjen.English.html" class="btn chinese">English</a>
-            <a href="../html/Arjen.Japanese.html" class="btn japanese">日本語</a>
-        </div>
-    <!-- 下部 ------------------------------------------------------------------------------------>
-        <p class="footer"> &copy;2021 Yunjie Wang </p>
- 
-</section>
+
+    <!-- Sticky footer at the bottom of the page -->
+    <footer class="footer-container">
+        <p class="footer">&copy; 2024 Ying Luo</p>
+    </footer>
 
 </body>
-    
+
+</html>
