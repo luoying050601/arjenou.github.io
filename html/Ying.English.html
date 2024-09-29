@@ -13,25 +13,25 @@
     </script> <!-- Load the language.js script -->
     <script>
 
-         // 获取 URL 参数函数
-    function getQueryParameter(param) {
-        let urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param);
-    }
-
-    // // 根据 lang 参数加载不同的语言
-    // window.onload = function () {
-    //
-    // };
-        window.onload = function () {
-        let lang = getQueryParameter('lang'); // 获取 lang 参数
-
-        if (lang) {
-            // loadLanguage('en');
-            loadLanguage(lang); // 调用已有的 loadLanguage 函数加载对应语言
-        } else {
-            loadLanguage('en'); // 默认加载英文
+        // 获取 URL 参数函数
+        function getQueryParameter(param) {
+            let urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
         }
+
+        // // 根据 lang 参数加载不同的语言
+        // window.onload = function () {
+        //
+        // };
+        window.onload = function () {
+            let lang = getQueryParameter('lang'); // 获取 lang 参数
+
+            if (lang) {
+                // loadLanguage('en');
+                loadLanguage(lang); // 调用已有的 loadLanguage 函数加载对应语言
+            } else {
+                loadLanguage('en'); // 默认加载英文
+            }
 
             let currentSlideIndex = 0;
             // const slides = document.querySelectorAll('.carousel-item');
@@ -131,16 +131,47 @@
             <div class="carousel-container">
                 <!-- Image slider section -->
                 <div class="carousel">
-                    <div class="carousel-item"><img alt="Photo 1" src="../img/photo1.png"/></div>
-                    <div class="carousel-item"><img alt="Photo 2" src="../img/photo2.png"/></div>
-                    <div class="carousel-item"><img alt="Photo 3" src="../img/photo3.png"/></div>
-                    <div class="carousel-item"><img alt="Photo 4" src="../img/photo4.png"/></div>
-                    <div class="carousel-item"><img alt="Photo 5" src="../img/photo5.png"/></div>
-                    <div class="carousel-item"><img alt="Photo 6" src="../img/photo6.png"/></div>
-                    <div class="carousel-item"><img alt="Photo 7" src="../img/photo7.png"/></div>
-                    <div class="carousel-item"><img alt="Photo 8" src="../img/photo8.png"/></div>
-                    <div class="carousel-item"><img alt="Photo 9" src="../img/photo9.png"/></div>
-                    <div class="carousel-item"><img alt="Photo 10" src="../img/photo10.png"/></div>
+                    <div class="carousel-item"><img alt="Photo 1" src="../img/photo1.png"/>
+                        <div class="overlay"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="carousel-item"><img alt="Photo 2" src="../img/photo2.png"/>
+                        <div class="overlay"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="carousel-item"><img alt="Photo 3" src="../img/photo3.png"/>
+                        <div class="overlay"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="carousel-item"><img alt="Photo 4" src="../img/photo4.png"/>
+                        <div class="overlay"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="carousel-item"><img alt="Photo 5" src="../img/photo5.png"/>
+                        <div class="overlay"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="carousel-item"><img alt="Photo 6" src="../img/photo6.png"/>
+                        <div class="overlay"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="carousel-item"><img alt="Photo 7" src="../img/photo7.png"/>
+                        <div class="overlay"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="carousel-item"><img alt="Photo 8" src="../img/photo8.png"/>
+                        <div class="overlay"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="carousel-item"><img alt="Photo 9" src="../img/photo9.png"/>
+                        <div class="overlay"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="carousel-item"><img alt="Photo 10" src="../img/photo10.png"/>
+                        <div class="overlay"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                    </div>
+
                 </div>
 
                 <!-- Dots for navigation -->

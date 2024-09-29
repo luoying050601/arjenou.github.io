@@ -420,21 +420,6 @@ body {
     background-color: #717171;
 }
 
-/*.carousel {*/
-/*    display: flex;*/
-/*    overflow: hidden; !* 确保只显示一张图片 *!*/
-/*    width: 100%; !* 容器宽度 *!*/
-/*}*/
-
-/*.carousel-item {*/
-/*    min-width: 100%; !* 每张图片占据100%宽度 *!*/
-/*    transition: transform 0.5s ease-in-out; !* 平滑过渡效果 *!*/
-/*}*/
-
-/*.carousel img {*/
-/*    width: 100%; !* 确保图片自适应容器宽度 *!*/
-/*    height: auto;*/
-/*}*/
 
 .publications-container {
     display: flex;
@@ -558,6 +543,7 @@ p {
 .carousel-item {
     flex: 0 0 100%;  /* 每个 item 占据 100% 宽度 */
     box-sizing: border-box;
+    position: relative;
 }
 
 .carousel-item img {
@@ -642,4 +628,9 @@ p {
     padding: 5px 10px; /* 减少单个联系信息的 padding */
     margin-bottom: 10px; /* 添加一点底部空间 */
     flex: 1 1 45%; /* 让多个联系信息平分布局空间 */
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0); /* 完全透明 */
+    cursor: not-allowed; /* 鼠标指针变为不可操作样式 */
 }
